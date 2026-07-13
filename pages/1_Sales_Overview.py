@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-df = pd.read_csv("train.csv")
+df = pd.read_csv("superstore_processed.csv")
 
 df["Order Date"] = pd.to_datetime(df["Order Date"])
 
